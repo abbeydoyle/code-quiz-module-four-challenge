@@ -1,0 +1,62 @@
+:root {
+    --copper-rose: #936865;
+    --coriander: #C4CEB4;
+    --waterloo: #777a92;
+    --armadillo: #514B3D;
+    --kelp: #54513F;
+    --derby-brown: #52221A;
+    --bronze: #c67f43;
+    --muted-blue: #9ca0bb;
+    --wafer: #dccac980;
+
+  }
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--wafer);
+    color: var(--derby-brown);
+    margin: 0;
+    
+}
+
+header, body {
+    padding: 3rem;
+}
+
+
+#scores {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#scores > *{
+    outline: 2px dashed var(--copper-rose);
+    transition: all 0.5s ease-in-out;
+    padding: 2rem 2rem;
+    /* margin: 2rem 2rem; */
+    color: var(--derby-brown);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+#scores > *:hover {
+    box-shadow: inset 0 0 5rem var(--copper-rose), 0 0 5rem var(--copper-rose);
+}
+
+hr {
+    border-top: 0.25rem solid var(--kelp);
+    border-radius: 1rem;
+  }
+
+main {
+    padding: 0rem 2rem;
+    outline: 2px dashed var(--copper-rose);
+    transition: all 0.5s ease-in-out;
+    padding: 2rem 2rem;
+    /* margin: 2rem 2rem; */
+    color: var(--derby-brown);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
