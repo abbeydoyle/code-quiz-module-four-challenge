@@ -4,4 +4,3 @@ var highscores = document.querySelector("#highscores");
 var questions = document.querySelector("#questions");
 var button = document.querySelector("#button");
 
-class 

@@ -2,29 +2,45 @@
 
 // choose var for overwrite
 
-var questions = {
+var questions = [
 
     {
-    question: "Of the following, if statements, which one correctly executes three instructions if the condition is true?";
-    mc: ["If (x < 0) a = b * 2; y = x; z = a – y;", "{ if (x < 0) a = b * 2; y = x; z = a – y; }", "If{ (x < 0) a = b * 2; y = x; z = a – y ; }", "If (x < 0) { a = b * 2; y = x; z = a – y; }"]
-    answer: "If (x < 0) { a = b * 2; y = x; z = a – y; }"
+    question: "Which type of JavaScript language is ___";
+    mc: ["Object-Oriented", "Object-Based", "Assembly-language", "High-level"]
+    answer: "Object-Based"
     },
 
     {
-    question:
-    mc:
-    answer:
-    }
+    question: "Which one of the following also known as Conditional Expression:";
+    mc: ["Alternative to if-else", "Switch statement", "If-then-else statement", "immediate if"]
+    answer: "immediate if"
+    },
 
     {
-    question:
-    mc:
-    answer:
-    }
+    question: "In JavaScript, what is a block of statement?";
+    mc: ["Conditional block", "block that combines a number of statements into a single compound statement", "both conditional block and a single statement", "block that contains a single statement"]
+    answer: "block that combines a number of statements into a single compound statement"
+    },
 
     {
-    question:
-    mc:
-    answer:
-    }
-}
+    question: "When interpreter encounters an empty statements, what it will do:";
+    mc: ["Shows a warning", "Prompts to complete the statement", "Throws an error", "Ignores the statements"]
+    answer: "Ignores the statements"
+    },
+    
+    {
+    question: "The 'function' and 'var' are known as:";
+    mc: ["Keywords", "Data types", "Declaration statements", "Prototypes"]
+    answer: "Declaration statements"
+    },
+    
+    /*
+    {
+    question: "";
+    mc: ["", "", "", ""]
+    answer: ""
+    },
+    */
+
+
+]
