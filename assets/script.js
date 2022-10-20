@@ -18,14 +18,13 @@ timerEl = time;
 
 
 
-
 function startQuiz() {
      
       cycleQuestions(0);
       startPage.style.display = 'none';
       thanksEl.style.display = 'none';
-      timer = setInterval(countdown, 1000);
-     // timerEl.textContent = time
+//       timer = setInterval(countdown, 1000);
+//      // timerEl.textContent = time
 }
 
 
@@ -53,6 +52,8 @@ function cycleQuestions(index) {
 
 function userChoice() {
      // if choiceButton.value
+
+     var currentQuestion = questions[index];
      if (this.value !==  currentQuestion.answer[i]) {
       time -= 5
       if (time<0) {
