@@ -1,89 +1,48 @@
 var scores = document.querySelector("#scores");
-var timer = document.querySelector("#timer");
+var timerEl = document.querySelector("#timer");
 var highscores = document.querySelector("#highscores");
-//var questionsEL = document.querySelector("#question");
+var questionsEL = document.querySelector("#questions");
 var startButton = document.querySelector("#button");
-<<<<<<< HEAD
 var mcEl = document.querySelector("#mc-container");
 var startPage = document.querySelector("#start-page");
 var questionEl = document.querySelector("#question-container");
 var thanksEl = document.querySelector("#thanks");
 var resultEl = document.querySelector("#result");
 
-var timerStart;
+var timer;
 
 // have this dependent on number of questions
 var time = 60;
 
-//timerEl = time;
+timerEl = time;
 
-var currentQuestionIndex = 0;
-
-=======
-var questionsContainer = document.querySelector(".questions-container");
-var mcEl = document.querySelector("#mc");
->>>>>>> parent of 055bbc0 (work on js question loop, timer, no storage. userchoice error)
 
 
 
 function startQuiz() {
      
-<<<<<<< HEAD
-      //cycleQuestions(0);
+      cycleQuestions(0);
       startPage.style.display = 'none';
       thanksEl.style.display = 'none';
-      timerStart = setInterval(countdown, 1000);
-      timerEl.textContent = time;
-      cycleQuestions();
-=======
-      cycleQuestions(0);
-
->>>>>>> parent of 055bbc0 (work on js question loop, timer, no storage. userchoice error)
+      timer = setInterval(countdown, 1000);
+     // timerEl.textContent = time
 }
 
 
 
-<<<<<<< HEAD
 // go back and randomize questions
-function cycleQuestions() {
-      var currentQuestion = questions[currentQuestionIndex];
-      questionEl.textContent = currentQuestionIndex.question;
-      mcEl.innerHTML = "";
-      currentQuestion.mc.forEach(function(choice, i) {
-            console.log(choices, "sup");
-            var choiceButton = document.createElement("button");
-            choiceButton.onclick = userChoice;
-=======
 function cycleQuestions(index) {
-      let questionTag = document.createElement("p");
-      questionTag.textContent = questions[index].question;
-      questionsContainer.appendChild(questionTag);
-      let currentQuestion = questions[index];
-      for (let i = 0; i < currentQuestion.mc.length; i++) {
+      questionEl.textContent = questions[index].question;
+      var currentQuestion = questions[index];
+      mcEl.innerHTML = "";
+      for (i = 0; i < currentQuestion.mc.length; i++) {
             const choices = currentQuestion.mc[i];
             console.log(choices, "sup");
             const choiceButton = document.createElement("button");
             choiceButton.textContent = choices;
->>>>>>> parent of 055bbc0 (work on js question loop, timer, no storage. userchoice error)
+            choiceButton.onclick = userChoice;
             mcEl.appendChild(choiceButton);
-
-      });
-      
-
-
-
-
-      //questionEl.textContent = questions[index].question;
-      //var currentQuestion = questions[index];
-      //mcEl.innerHTML = "";
-      // for (i = 0; i < currentQuestion.mc.length; i++) {
-      //       const choices = currentQuestion.mc[i];
-      //       console.log(choices, "sup");
-      //       const choiceButton = document.createElement("button");
-      //       choiceButton.textContent = choices;
-      //       choiceButton.onclick = userChoice;
-      //       mcEl.appendChild(choiceButton);
-      // }
+      }
 }
 
 
@@ -91,6 +50,51 @@ function cycleQuestions(index) {
 
 
 
+
+function userChoice() {
+     // if choiceButton.value
+     if (this.value !==  currentQuestion.answer[i]) {
+      time -= 5
+      if (time<0) {
+            time = 0;
+      }
+      timerEl.textContent = time;
+      resultEl.textContent = "sorry </3";
+     }
+     else {
+      resultEl.textContent = "hell yeah";
+     }
+
+     currentQuestion++;
+
+     if (currentQuestion.length === 0) {
+      stopQuiz;
+     }
+     else {
+      cycleQuestions();
+     }
+}
+
+
+
+
+
+function stopQuiz() {
+      clearInterval(countdown);
+
+}
+
+
+
+
+
+function countdown() {
+      time--;
+      timerEl.textContent = time;
+      if (time <=0) {
+            stopQuiz;
+      }
+}
 
 
 startButton.addEventListener("click", startQuiz);
