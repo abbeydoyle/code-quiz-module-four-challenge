@@ -14,28 +14,28 @@
     <header>
         <h1>Coding Quiz</h1>
         <div id = "scores">
-            <section id = "#timer"> Time: </section>
+            <section>Time: <span id = "#timer">0</span></section>
             <aside id = "#highscores"> View High Scores </aside>
         </div>
         <hr>
     </header>
 
 
-    <main>
+    <main id = "start-page">
         <p>Answer as many questions as you can within the limit, but remember, all incorrect answers will take 5 seconds off of your remaining time. Good luck!</p>
         <button id = "button">Start Quiz!</button>
     </main>
 
     <article id = "card">
-        <div class = "questions-container">
-            <h3 id = "question"> </h3>
-            <div id = "mc"> </div>
+            <h3 id = "question-container"> </h3>
+            <div id = "mc-container"> </div>
+            <div id = "result"></div>
         </div>
 
     </article>
 
     <footer>
-        <h3>Thank you for playing!</h3>
+        <h3 id = "thanks">Thank you for playing!</h3>
     </footer>
 
     <script src="./assets/script.js"></script>

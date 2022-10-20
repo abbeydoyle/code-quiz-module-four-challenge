@@ -5,7 +5,7 @@
 var questions = [
 
     {
-    question: "Which type of JavaScript language is ___",
+    question: "Which type of language is Javascript?",
     mc: ["Object-Oriented", "Object-Based", "Assembly-language", "High-level"],
     answer: "Object-Based"
     },
