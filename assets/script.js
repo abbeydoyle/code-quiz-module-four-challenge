@@ -1,7 +1,7 @@
 var scores = document.querySelector("#scores");
 var timerEl = document.querySelector("#timer");
 var highscores = document.querySelector("#highscores");
-var questionsEL = document.querySelector("#questions");
+//var questionsEL = document.querySelector("#question");
 var startButton = document.querySelector("#button");
 var mcEl = document.querySelector("#mc-container");
 var startPage = document.querySelector("#start-page");
@@ -9,40 +9,58 @@ var questionEl = document.querySelector("#question-container");
 var thanksEl = document.querySelector("#thanks");
 var resultEl = document.querySelector("#result");
 
-var timer;
+var timerStart;
 
 // have this dependent on number of questions
 var time = 60;
 
-timerEl = time;
+//timerEl = time;
+
+var currentQuestionIndex = 0;
 
 
 
 
 function startQuiz() {
      
-      cycleQuestions(0);
+      //cycleQuestions(0);
       startPage.style.display = 'none';
       thanksEl.style.display = 'none';
-      timer = setInterval(countdown, 1000);
-     // timerEl.textContent = time
+      timerStart = setInterval(countdown, 1000);
+      timerEl.textContent = time;
+      cycleQuestions();
 }
 
 
 
 // go back and randomize questions
-function cycleQuestions(index) {
-      questionEl.textContent = questions[index].question;
-      var currentQuestion = questions[index];
+function cycleQuestions() {
+      var currentQuestion = questions[currentQuestionIndex];
+      questionEl.textContent = currentQuestionIndex.question;
       mcEl.innerHTML = "";
-      for (i = 0; i < currentQuestion.mc.length; i++) {
-            const choices = currentQuestion.mc[i];
+      currentQuestion.mc.forEach(function(choice, i) {
             console.log(choices, "sup");
-            const choiceButton = document.createElement("button");
-            choiceButton.textContent = choices;
+            var choiceButton = document.createElement("button");
             choiceButton.onclick = userChoice;
             mcEl.appendChild(choiceButton);
-      }
+
+      });
+      
+
+
+
+
+      //questionEl.textContent = questions[index].question;
+      //var currentQuestion = questions[index];
+      //mcEl.innerHTML = "";
+      // for (i = 0; i < currentQuestion.mc.length; i++) {
+      //       const choices = currentQuestion.mc[i];
+      //       console.log(choices, "sup");
+      //       const choiceButton = document.createElement("button");
+      //       choiceButton.textContent = choices;
+      //       choiceButton.onclick = userChoice;
+      //       mcEl.appendChild(choiceButton);
+      // }
 }
 
 
