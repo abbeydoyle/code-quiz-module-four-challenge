@@ -4,86 +4,113 @@
 
 var questions = [
     {
-      title: "Which one is a looping structure in JavaScript?",
-      choices: ["All the below", "For", "While", "do-while loops"],
-      answer: "All the below"
+      title: "Which type of language is Javascript?",
+      choices: [
+        "Object-Oriented", 
+        "Object-Based", 
+        "Assembly-language", 
+        "High-level"
+      ],
+      answer: "Object-Based"
     },
     {
-      title: "What are the two basic groups of data types in JavaScript?",
+      title: "Which one of the following is also known as Conditional Expression:",
       choices: [
-        "Primitive and attribute",
-        "Primitive and reference types",
-        "Reference types and attribute",
+        "Alternative to if-else",
+        "Switch statement",
+        "If-then-else statement",
+        "Immediate if"
+      ],
+      answer: "Immediate if"
+    },
+    {
+      title: "When interpreter encounters an empty statements, what it will do?",
+      choices: [
+        "Shows a warning", 
+        "Prompts to complete the statement", 
+        "Throws an error", 
+        "Ignores the statements"
+      ],
+      answer: "Ignores the statements"
+    },
+    {
+      title: "'Function' and 'var' are known as:",
+      choices: [
+        "Keywords",
+        "Data types",
+        "Declaration statements",
+        "Prototypes"
+      ],
+      answer: "Declaration statements"
+    },
+    {
+      title: "Which of the following variables takes precedence over the others if the names are the same?",
+      choices: [
+        "Global variable",
+        "The local element",
+        "All of the above",
         "None of the above"
       ],
-      answer: "Primitive and reference types"
+      answer: "The local element"
     },
     {
-      title: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
-    },
-    {
-      title: "Boolean operators that can be used in JavaScript include:",
+      title: "When there is an indefinite or an infinite value during an arithmetic computation in a program, then JavaScript prints: ",
       choices: [
-        "'And' Operator &&",
-        "'Or' Operator ||",
-        "'Not' Operator !",
-        "All the above"
+        "Prints an exception error",
+        "Prints an overflow error",
+        "Displays 'Infinity'",
+        "Prints the value as such"
       ],
-      answer: "All the above"
+      answer: "Displays 'Infinity'"
     },
     {
-      title:
-        "Which one of these is not among the three different types of errors in JavaScript?",
+      title: "In the JavaScript, which one of the following is not considered as an error:",
       choices: [
-        "Animation time errors",
-        "Load time errors",
-        "Run time errors",
-        "Logical Errors"
+        "Syntax error", 
+        "Missing of semicolons", 
+        "Division by zero", 
+        "Missing of Bracket"
       ],
-      answer: "Animation time errors"
+        answer: "Division by zero"
     },
     {
-      title: "What is the data type of variables in JavaScript?",
+      title: "Which of the following function of the String object returns the character in the string starting at the specified position via the specified number of characters?",
       choices: [
-        "Object data types",
-        "Function data type",
-        "None of the above",
-        "All of the above"
+        "slice()",
+        "split()",
+        "substr()",
+        "search()"
       ],
-      answer: "Object data types"
+      answer: "substr()"
     },
     {
-      title: "The condition in an if / else statement is enclosed within ____.",
-      choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-      answer: "parentheses"
-    },
-    {
-      title: "Arrays in JavaScript can be used to store ____.",
+      title: "In JavaScript the x===y statement implies that:",
       choices: [
-        "numbers and strings",
-        "other arrays",
-        "booleans",
-        "all of the above"
+        "Both x and y are equal in value, type and reference address as well.", 
+        "Both are x and y are equal in value only.", 
+        "Both are equal in the value and data type.", 
+        "Both are not same at all."
       ],
-      answer: "all of the above"
+      answer: "Both are equal in the value and data type."
     },
     {
-      title:
-        "String values must be enclosed within ____ when being assigned to variables.",
-      choices: ["commas", "curly brackets", "quotes", "parentheses"],
-      answer: "quotes"
+      title: "What we will get if we compare the 'one' with '8' using the less than operator ('one'<8)?",
+      choices: [
+        "False", 
+        "True", 
+        "NaN", 
+        "Undefined"
+      ],
+      answer: "False"
     },
     {
-      title:
-        "A very useful tool used during development and debugging for printing content to the debugger is:",
-      choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
-      answer: "console.log"
-    },
-    {
-      title: "What is the type of Pop up boxes available in JavaScript?:",
-      choices: ["Alert", "Confirm", "Prompt", "All the above"],
-      answer: "All the above"
+      title: "Which one of the following is not a keyword:",
+      choices: [
+        "If", 
+        "With", 
+        "Debugger", 
+        "Use strict"
+      ],
+      answer: "Use strict"
     }
   ];

@@ -50,7 +50,7 @@ function getQuestion() {
     choiceNode.setAttribute("class", "choice");
     choiceNode.setAttribute("value", choice);
 
-    choiceNode.textContent = i + 1 + ". " + choice;
+    choiceNode.textContent = i + 1 + ") " + choice;
 
     // attach click event listener to each choice
     choiceNode.onclick = questionClick;
@@ -84,7 +84,7 @@ function questionClick() {
   feedbackEl.setAttribute("class", "feedback");
   setTimeout(function() {
     feedbackEl.setAttribute("class", "feedback hide");
-  }, 1500);
+  }, 1000);
 
   // next question
   currentQuestionIndex++;
