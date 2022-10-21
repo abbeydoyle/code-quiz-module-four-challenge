@@ -24,14 +24,14 @@ header, body {
 }
 
 
-#scores {
+.bar {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 2rem;
 }
 
-#scores > *{
+.bar > *{
     outline: 2px dashed var(--copper-rose);
     transition: all 0.5s ease-in-out;
     padding: 0.5rem 2rem;
@@ -41,7 +41,7 @@ header, body {
     transition: all 0.5s ease-in-out;
 }
 
-#scores > *:hover {
+.bar > *:hover {
     box-shadow: inset 0 0 5rem var(--copper-rose), 0 0 5rem var(--copper-rose);
 }
 
