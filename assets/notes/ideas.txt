@@ -1,1 +1,0 @@
-have the timer length be a factor of the number of questions
