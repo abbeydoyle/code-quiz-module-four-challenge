@@ -8,13 +8,13 @@ var startPage = document.querySelector("#start-page");
 var questionEl = document.querySelector("#question-container");
 var thanksEl = document.querySelector("#thanks");
 var resultEl = document.querySelector("#result");
-
+var index=0;
 var timer;
 
 // have this dependent on number of questions
 var time = 60;
 
-timerEl = time;
+timerEl.textContent = time;
 
 
 
@@ -23,14 +23,15 @@ function startQuiz() {
       cycleQuestions(0);
       startPage.style.display = 'none';
       thanksEl.style.display = 'none';
-//       timer = setInterval(countdown, 1000);
-//      // timerEl.textContent = time
+      timer = setInterval(countdown, 1000);
+      timerEl.textContent = time
 }
 
 
 
 // go back and randomize questions
 function cycleQuestions(index) {
+      console.log("index = ", index);
       questionEl.textContent = questions[index].question;
       var currentQuestion = questions[index];
       mcEl.innerHTML = "";
@@ -68,11 +69,12 @@ function userChoice() {
 
      currentQuestion++;
 
-     if (currentQuestion.length === 0) {
+     if (index === 4) {
       stopQuiz;
      }
      else {
-      cycleQuestions();
+      index++;
+      cycleQuestions(index);
      }
 }
 
