@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web API: Code Quiz</title>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
 
+  <body>
+      <div class = "bar">
+            <div class="timer">Time: <span id="time">0</span></div>
 
-<body>
-    <header>
-        <h1>Coding Quiz</h1>
-        <div id = "scores">
-            <section>Time: <span id = "timer">0</span></section>
-            <aside id = "highscores"> View High Scores </aside>
-        </div>
-        <hr>
-    </header>
+            <div class="scores"><a href="./assets/highscores.html">View Highscores</a></div>
+      </div>
+      <hr>
 
+    <div class="wrapper">
+      <div id="start-screen" class="start">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+            Answer as many questions as you can within the limit, but remember, all incorrect answers will take 5 seconds off of your remaining time. Good luck!
+        </p>
+        <button id="start">Start Quiz!</button>
+      </div>
 
-    <main id = "start-page">
-        <p>Answer as many questions as you can within the limit, but remember, all incorrect answers will take 5 seconds off of your remaining time. Good luck!</p>
-        <button id = "button">Start Quiz!</button>
-    </main>
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
 
-    <article id = "card">
-            <h3 id = "question-container"> </h3>
-            <div id = "mc-container"> </div>
-            <div id = "result"></div>
-        </div>
+      <div id="end-screen" class="hide">
+        <h2>Thank you for playing!</h2>
+        <p>Final Score: <span id="final-score"></span>.</p>
+        <p>
+          Enter initials: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
 
-    </article>
-
-    <footer>
-        <h3 id = "thanks">Thank you for playing!</h3>
-    </footer>
+      <div id="feedback" class="feedback hide"></div>
+    </div>
 
     <script src="./assets/script.js"></script>
     <script src="./assets/questions.js"></script>
-    
-</body>
+  </body>
 </html>
