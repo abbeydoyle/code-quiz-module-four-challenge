@@ -73,11 +73,11 @@ function questionClick() {
     timerEl.textContent = time;
     feedbackEl.textContent = "Sorry </3";
     feedbackEl.style.color = "var(--waterloo)";
-    feedbackEl.style.fontSize = "2rem";
+    feedbackEl.style.fontSize = "1.5rem";
   } else {
     feedbackEl.textContent = "Hell yeah!";
-    feedbackEl.style.color = "var(--armadillo)";
-    feedbackEl.style.fontSize = "2rem";
+    feedbackEl.style.color = "var(--sage)";
+    feedbackEl.style.fontSize = "1.5rem";
   }
 
   // flash right/wrong feedback

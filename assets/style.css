@@ -8,19 +8,20 @@
     --bronze: #c67f43;
     --muted-blue: #9ca0bb;
     --wafer: #dccac980;
+    --sage: #9CAF88; 
 
   }
 
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: var(--wafer);
+    /* background-color: var(--wafer); */
     color: var(--derby-brown);
     margin: 0;
     
 }
 
 header, body {
-    padding: 3rem;
+    background-color: var(--wafer);
 }
 
 
@@ -37,30 +38,54 @@ header, body {
     padding: 0.5rem 2rem;
     /* margin: 2rem 2rem; */
     color: var(--derby-brown);
-    border-radius: 8px;
+    /* border-radius: 2px; */
     transition: all 0.5s ease-in-out;
 }
 
 .bar > *:hover {
-    box-shadow: inset 0 0 5rem var(--copper-rose), 0 0 5rem var(--copper-rose);
+    box-shadow: inset 0 0 1rem var(--copper-rose), 0 0 1rem var(--copper-rose);
 }
 
 hr {
-    border-top: 0.25rem solid var(--kelp);
-    border-radius: 1rem;
+    border-top: 0.1rem solid var(--kelp);
+    border-radius: 0.5rem;
   }
 
-main {
-    padding: 0rem 2rem;
-    outline: 2px dashed var(--copper-rose);
-    transition: all 0.5s ease-in-out;
-    padding: 2rem 2rem;
-    /* margin: 2rem 2rem; */
-    color: var(--derby-brown);
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-}
 
 .hide {
     display: none;
+}
+
+.wrapper {
+    padding: 3rem;
+}
+
+h1, h2, p, .choices {
+    margin-bottom: 3rem;
+}
+
+
+p {
+    font-size: 1rem;
+}
+
+button, #initials {
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color:var(--wafer);
+}
+
+button, #initials > *{
+    outline: var(--copper-rose);
+    transition: all 0.5s ease-in-out;
+    padding: 0.5rem 2rem;
+    /* margin: 2rem 2rem; */
+    color: var(--derby-brown);
+    /* border-radius: 2px; */
+    transition: all 0.5s ease-in-out;
+}
+
+button, #initials > *:hover {
+    box-shadow: inset 0 0 1rem var(--copper-rose), 0 0 1rem var(--copper-rose);
 }
