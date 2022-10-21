@@ -8,6 +8,7 @@ var startPage = document.querySelector("#start-page");
 var questionEl = document.querySelector("#question-container");
 var thanksEl = document.querySelector("#thanks");
 var resultEl = document.querySelector("#result");
+var quizEl = document.querySelector("#card");
 var index=0;
 var timer;
 
@@ -70,7 +71,7 @@ function userChoice() {
      currentQuestion++;
 
      if (index === 4) {
-      stopQuiz;
+      stopQuiz();
      }
      else {
       index++;
@@ -83,7 +84,9 @@ function userChoice() {
 
 
 function stopQuiz() {
-      clearInterval(countdown);
+      clearInterval(timer);
+      thanksEl.style.display = "block";
+      quizEl.style.display = 'none';
 
 }
 
@@ -95,7 +98,7 @@ function countdown() {
       time--;
       timerEl.textContent = time;
       if (time <=0) {
-            stopQuiz;
+            stopQuiz();
       }
 }
 
