@@ -9,7 +9,7 @@ var feedbackEl = document.querySelector("#feedback");
 
 
 var currentQuestionIndex = 0;
-//var time = questions.length * 15;
+var time = questions.length * 15;
 var time = 120;
 var timerId;
 

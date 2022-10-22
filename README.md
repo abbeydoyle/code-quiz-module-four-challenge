@@ -1,16 +1,9 @@
 # code-quiz-module-four-challenge
 Web API: Code Quiz
 
-Questions:
-https://www.javatpoint.com/javascript-mcq
-
 ## Description
 
-Thiis project was designed to 
-
-This project was meant to create an online portfolio that will eventually showcase web applications I develop throughout both this bootcamp and my professional career. As a future web developer, it will be important to have a central location containing some of my work for employers and fellow developers. It will also be key to seeing how far my skills develop as I gain more experience. 
-
-The portfolio, as it currently stands, was developed using only HTML and CSS. This was the first webpage I've created from scratch without the use of any third party developers. Doing this, I learned important skills such as debugging code and the delicate relationships between HTML and CSS.
+This aim of this project waas to create an online conding quiz using HTML, CSS, JS, and Web APIs. This is a timed quiz, cycling through an array of questions, which stores the user's high score (the amount of time left at the end of the quiz). Not only did this quiz allow me to further refine the skills learned previously with HTML, CSS, and JS, but also allowed me to implement new skills learned throughout the Web APIs module. The quiz questions themselves revolve around Javascript and will be used for interview prep. Throughout this project, I learned about local storage, timers, debugging, and was able to further practice loops and linking functions.
 
 
 <!-- Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
@@ -32,9 +25,10 @@ The portfolio, as it currently stands, was developed using only HTML and CSS. Th
 - [Features](#features)
 - [Tests](#tests)
 
+
 ## Installation
 
-There is no installation required for this online portfolio. Simply follow this [link](https://abbeydoyle.github.io/module-two-challenge/), open in your preferred browser, and peruse the basis for my future web developer portfolio.
+There is no installation required for this coding quiz. Simply follow this [link](https://abbeydoyle.github.io/code-quiz-module-four-challenge/), open in your preferred browser, and test your Javascript knowledge!
 
 <!-- What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running. -->
 
@@ -43,22 +37,28 @@ There is no installation required for this online portfolio. Simply follow this 
 
 There are 6 main sections of this repository:
 
-- [Assets Folder](https://github.com/abbeydoyle/module-two-challenge/tree/main/assets) - Contains all [webpage images](https://github.com/abbeydoyle/module-two-challenge/tree/main/assets/images) and the CSS Folder
+- [Assets Folder](https://github.com/abbeydoyle/code-quiz-module-four-challenge/tree/main/assets) - Contains all of the: Javascript files, the [highscores webpage](https://github.com/abbeydoyle/code-quiz-module-four-challenge/blob/main/assets/highscores.html), the [CSS page](https://github.com/abbeydoyle/code-quiz-module-four-challenge/blob/main/assets/style.css), the [images folder](https://github.com/abbeydoyle/code-quiz-module-four-challenge/tree/main/assets/images), and a [notes folder](https://github.com/abbeydoyle/code-quiz-module-four-challenge/tree/main/assets/notes), which contains a graveyard.js file, which contains nonfunctional code to reference, and a pseudo.js file, that has an opening scripting process
 
-- [CSS Folder](https://github.com/abbeydoyle/module-two-challenge/tree/main/assets/css) - Contains all CSS Styling for the entire webpage along with a CSS graveyard file, where outdated CSS is stored for future reference
+- [Script.js](https://github.com/abbeydoyle/code-quiz-module-four-challenge/tree/main/assets/images) - Contains the main script for the code quiz
 
-- [HTML](https://github.com/abbeydoyle/module-two-challenge/blob/main/index.html) - Contains the HTML encoding the Portfolio Homepage
+- [Questions.js](https://github.com/abbeydoyle/code-quiz-module-four-challenge/blob/main/assets/questions.js)- Contains the script for the questions, multiple choice, and answers array
 
-- [Subpages Folder](https://github.com/abbeydoyle/module-two-challenge/tree/main/subpages) - Contains all child html pages for the html Portfolio home parent page along with an HTML graveyard file, used for unused code for future reference
+- [Scores.js](https://github.com/abbeydoyle/code-quiz-module-four-challenge/blob/main/assets/scores.js) - Contains the script for the highscores and local storage
 
-- [License](https://github.com/abbeydoyle/module-two-challenge/blob/main/LICENSE) - Contains the webpage license
+- [HTML](https://github.com/abbeydoyle/code-quiz-module-four-challenge/blob/main/index.html) - Contains the HTML encoding the Web API coding quiz
 
-- [ReadMe](https://github.com/abbeydoyle/module-two-challenge/blob/main/README.md) - This file containing an executive overview of the project
+- [License](https://github.com/abbeydoyle/code-quiz-module-four-challenge/blob/main/LICENSE) - Contains the webpage license
+
+- [ReadMe](https://github.com/abbeydoyle/code-quiz-module-four-challenge/blob/main/README.md) - This file containing an executive overview of the project
 
 
- ![Porfolio Homepage](./assets/images/module-two-challenge-homepage.png)
+![Coding Quiz Start Page](./assets/images/Coding%20Quiz.png)
 
- Screenshots of all subpages can be found in the [images](https://github.com/abbeydoyle/module-two-challenge/tree/main/assets/images) folder.
+![Coding Quiz Page](./assets/images/Coding%20Quiz_2.png)
+
+![Coding Quiz End Page](./assets/images/Coding%20Quiz_End.png)
+
+![Coding Quiz End Page](./assets/images/Highscores.png)
 
 
 
@@ -75,6 +75,8 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 This webpage was built using UW Trilogy Bootcamp class materials as references.
 
 I received advice on this challenge from my tutor, Rene Trevino.
+
+The quiz questions were sourced from [https://www.javatpoint.com/javascript-mcq](https://www.javatpoint.com/javascript-mcq).
 
 ## License
 
@@ -96,17 +98,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Badges
 
-![badmath](https://img.shields.io/github/repo-size/abbeydoyle/module-two-challenge?color=pink&style=plastic)
+![badmath](https://img.shields.io/github/repo-size/abbeydoyle/code-quiz-module-four-challenge?color=pink&style=plastic)
 
-![badmath](https://img.shields.io/github/issues-closed-raw/abbeydoyle/module-two-challenge?color=pink&style=plastic)
+![badmath](https://img.shields.io/github/issues-closed-raw/abbeydoyle/code-quiz-module-four-challenge?color=pink&style=plastic)
 
-![badmath](https://img.shields.io/github/issues-raw/abbeydoyle/module-two-challenge?color=pink&style=plastic)
+![badmath](https://img.shields.io/github/issues-raw/abbeydoyle/code-quiz-module-four-challenge?color=pink&style=plastic)
 
-![badmath](https://img.shields.io/github/license/abbeydoyle/module-two-challenge?color=pink&style=plastic)
+![badmath](https://img.shields.io/github/license/abbeydoyle/code-quiz-module-four-challenge?color=pink&style=plastic)
 
-![badmath](https://img.shields.io/github/commits-since/abbeydoyle/module-two-challenge/8215fd4/main?color=pink&style=plastic)
+![badmath](https://img.shields.io/github/commits-since/abbeydoyle/code-quiz-module-four-challenge/7a07be6/main?color=pink&style=plastic)
 
-![badmath](https://img.shields.io/github/last-commit/abbeydoyle/module-two-challenge?color=pink&style=plastic)
+![badmath](https://img.shields.io/github/last-commit/abbeydoyle/code-quiz-module-four-challenge?color=pink&style=plastic)
 
 ![badmath](https://img.shields.io/maintenance/yes/2022?color=pink&style=plastic)
 
@@ -119,14 +121,11 @@ Badges aren't necessary, per se, but they demonstrate street cred. Badges let ot
 
 This page features:
 
-- Fixed social media bar
-- Contact links
-- Media screen compatibility
-- Nav bar with linked sections
-- Glowing sections
-- Basis for a feedback form
-- Self-designed Favicon image
-
+- Timed Quiz
+- Countdown timer
+- Locally stored high scores with initials
+- Timed question feedback
+- Final Scores
 
 
 <!-- If your project has a lot of features, list them here. -->
@@ -137,16 +136,9 @@ If you created an application or package and would like other developers to cont
 
 ## Tests
 
-This webpage is compatible on various screen sizes! Test it out by visiting the page on your computer, tablet, or phone.
+Hit the "Start Quiz" button to take the quiz.
 
-Click the inline banner categories to be immediately directed to the corresponding webpage sections.
+Click the "View Highscores" link in the top right to be redirected to the initials and scores of previous quiz attempts.
 
-Test out the fixed social media bar by clicking the icons to be redirected to the corresponding pages.
-
-There are several other embedded links on this site, check them out!
-
-When on a subpage, be immediately redirected back to the homepage by clicking the fixed home icon on the left hand side.
-
-Feel free to test out the radio buttons and check boxes on the Feedback Form but please note that this form cannot currently be submitted.
 
 <!-- Go the extra mile and write tests for your application. Then provide examples on how to run them here. -->
