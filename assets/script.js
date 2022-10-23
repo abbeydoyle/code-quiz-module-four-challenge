@@ -46,17 +46,17 @@ function getQuestion() {
   mcEl.innerHTML = "";
 
   // cycle through questions
-  currentQuestion.mc.forEach(function(choice, i) {
+  currentQuestion.mc.forEach(function(mc, i) {
 
-    var choiceNode = document.createElement("button");
-    choiceNode.setAttribute("class", "choice");
-    choiceNode.setAttribute("value", choice);
+    var mcBtn = document.createElement("button");
+    mcBtn.setAttribute("class", "mc");
+    mcBtn.setAttribute("value", mc);
 
-    choiceNode.textContent = i + 1 + ") " + choice;
+    mcBtn.textContent = i + 1 + ") " + mc;
 
-    choiceNode.onclick = questionClick;
+    mcBtn.onclick = questionClick;
 
-    mcEl.appendChild(choiceNode);
+    mcEl.appendChild(mcBtn);
   });
 }
 
@@ -78,7 +78,7 @@ function questionClick() {
 
   // correct guess
   else {
-    feedbackEl.textContent = "Hell yeah!";
+    feedbackEl.textContent = "Nice!";
     feedbackEl.style.color = "var(--sage)";
     feedbackEl.style.fontSize = "1.5rem";
   }
