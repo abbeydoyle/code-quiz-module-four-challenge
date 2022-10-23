@@ -1,7 +1,7 @@
 //global variables
 var questionsEl = document.querySelector("#questions");
 var timerEl = document.querySelector("#time");
-var choicesEl = document.querySelector("#choices");
+var mcEl = document.querySelector("#mc");
 var submitBtn = document.querySelector("#submit");
 var startBtn = document.querySelector("#start");
 var initialsEl = document.querySelector("#initials");
@@ -9,7 +9,7 @@ var feedbackEl = document.querySelector("#feedback");
 
 
 var currentQuestionIndex = 0;
-var time = questions.length * 15;
+//var time = questions.length * 15;
 var time = 120;
 var timerId;
 
@@ -24,7 +24,7 @@ function startQuiz() {
   questionsEl.removeAttribute("class");
 
   // stimer
-  timerId = setInterval(clockTick, 1500);
+  timerId = setInterval(countdown, 1500);
   timerEl.textContent = time;
 
   getQuestion();
@@ -43,10 +43,10 @@ function getQuestion() {
   titleEl.textContent = currentQuestion.title;
 
   // removes old mc elements
-  choicesEl.innerHTML = "";
+  mcEl.innerHTML = "";
 
   // cycle through questions
-  currentQuestion.choices.forEach(function(choice, i) {
+  currentQuestion.mc.forEach(function(choice, i) {
 
     var choiceNode = document.createElement("button");
     choiceNode.setAttribute("class", "choice");
@@ -56,7 +56,7 @@ function getQuestion() {
 
     choiceNode.onclick = questionClick;
 
-    choicesEl.appendChild(choiceNode);
+    mcEl.appendChild(choiceNode);
   });
 }
 
@@ -118,7 +118,7 @@ function quizEnd() {
 }
 
 // timer
-function clockTick() {
+function countdown() {
   time--;
   timerEl.textContent = time;
 

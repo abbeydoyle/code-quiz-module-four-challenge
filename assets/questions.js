@@ -5,7 +5,7 @@
 var questions = [
     {
       title: "Which type of language is Javascript?",
-      choices: [
+      mc: [
         "Object-Oriented", 
         "Object-Based", 
         "Assembly-language", 
@@ -15,7 +15,7 @@ var questions = [
     },
     {
       title: "Which one of the following is also known as Conditional Expression:",
-      choices: [
+      mc: [
         "Alternative to if-else",
         "Switch statement",
         "If-then-else statement",
@@ -25,7 +25,7 @@ var questions = [
     },
     {
       title: "When interpreter encounters an empty statements, what it will do?",
-      choices: [
+      mc: [
         "Shows a warning", 
         "Prompts to complete the statement", 
         "Throws an error", 
@@ -35,7 +35,7 @@ var questions = [
     },
     {
       title: "'Function' and 'var' are known as:",
-      choices: [
+      mc: [
         "Keywords",
         "Data types",
         "Declaration statements",
@@ -45,7 +45,7 @@ var questions = [
     },
     {
       title: "Which of the following variables takes precedence over the others if the names are the same?",
-      choices: [
+      mc: [
         "Global variable",
         "The local element",
         "All of the above",
@@ -55,7 +55,7 @@ var questions = [
     },
     {
       title: "When there is an indefinite or an infinite value during an arithmetic computation in a program, then JavaScript prints: ",
-      choices: [
+      mc: [
         "Prints an exception error",
         "Prints an overflow error",
         "Displays 'Infinity'",
@@ -65,7 +65,7 @@ var questions = [
     },
     {
       title: "In the JavaScript, which one of the following is not considered as an error:",
-      choices: [
+      mc: [
         "Syntax error", 
         "Missing of semicolons", 
         "Division by zero", 
@@ -75,7 +75,7 @@ var questions = [
     },
     {
       title: "Which of the following function of the String object returns the character in the string starting at the specified position via the specified number of characters?",
-      choices: [
+      mc: [
         "slice()",
         "split()",
         "substr()",
@@ -85,7 +85,7 @@ var questions = [
     },
     {
       title: "In JavaScript the x===y statement implies that:",
-      choices: [
+      mc: [
         "Both x and y are equal in value, type and reference address as well.", 
         "Both are x and y are equal in value only.", 
         "Both are equal in the value and data type.", 
@@ -95,7 +95,7 @@ var questions = [
     },
     {
       title: "What we will get if we compare the 'one' with '8' using the less than operator ('one'<8)?",
-      choices: [
+      mc: [
         "False", 
         "True", 
         "NaN", 
@@ -105,7 +105,7 @@ var questions = [
     },
     {
       title: "Which one of the following is not a keyword:",
-      choices: [
+      mc: [
         "If", 
         "With", 
         "Debugger", 

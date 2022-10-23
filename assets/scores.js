@@ -1,15 +1,14 @@
 // local storage to highscores page
 function printHighscores() {
-      //pull from local storage
+      // pull from local storage
       var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
     
-      // sort highscores
+      // sorts scores descenting
       highscores.sort(function(a, b) {
         return b.score - a.score;
       });
     
       highscores.forEach(function(score) {
-        // append input to page
         var liTag = document.createElement("li");
         liTag.textContent = score.initials + " - " + score.score;
     
@@ -18,7 +17,7 @@ function printHighscores() {
       });
 }
  
-// clear out local storage with user input
+// clear out local storage with click
 function clearHighscores() {
   window.localStorage.removeItem("highscores");
   window.location.reload();
